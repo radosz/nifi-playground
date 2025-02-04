@@ -67,6 +67,15 @@ echo Copying mkcert root CA certificate...
 copy "%CAROOT%\rootCA.pem" rootCA.pem
 
 REM -------------------------------------------------
+REM Step 5 Install certificate for localhosht
+REM -------------------------------------------------
+echo.
+echo Install certificate for localhosht
+echo To check cert is available looking for mkcert in certmgr.msc
+echo.
+mkcert -install
+
+REM -------------------------------------------------
 REM Display summary and verification information
 REM -------------------------------------------------
 echo.
